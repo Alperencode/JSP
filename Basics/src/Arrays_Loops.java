@@ -17,7 +17,7 @@ public class Arrays_Loops {
         // For ints in twoDimensional
         for (int[] ints : twoDimensional)
             // For anInt in ints
-            for (int anInt : int){
+            for (int anInt : ints){
                 if (Math.sqrt(anInt) == 4) continue;
                 System.out.print(anInt + " ");
             }
