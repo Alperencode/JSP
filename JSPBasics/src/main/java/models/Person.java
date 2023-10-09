@@ -2,7 +2,7 @@
  *
  * @author Alperen Aga
  */
-package com.example;
+package models;
 
 public class Person {
     String name, surname;

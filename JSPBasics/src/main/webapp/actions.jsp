@@ -5,7 +5,7 @@
 --%>
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
-<%@ page import="com.example.Person" %>
+<%@ page import="models.Person" %>
 
 <!DOCTYPE html>
 <html>
