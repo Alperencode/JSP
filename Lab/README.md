@@ -32,4 +32,3 @@ We were asked to do:
 Optional:
 - Print values to `txt` file.
 - **Source code can be found on [here](Lab3/src/main/webapp/).**
-- > Note: Not finished yet
