@@ -11,6 +11,9 @@ public class UserDAO {
 
     public static void addUserToDB(User user) {
         try {
+            // This process used repeatedly to memorise the code snippet
+
+            // Connecting to mysql
             String db = "web_final";
             Class.forName("com.mysql.jdbc.Driver");
             Connection conn = DriverManager.getConnection(
@@ -18,15 +21,16 @@ public class UserDAO {
                     "root",
                     ""
             );
+
+            // Preparing statement
             PreparedStatement pr = conn.prepareStatement(
                     "INSERT INTO `users` (`username`, `age`) VALUES (?, ?);"
             );
-
             pr.setString(1, user.getUsername());
             pr.setInt(2, user.getAge());
-            System.out.println(pr);
-            pr.execute();
 
+            // Executing query
+            pr.execute();
         } catch (ClassNotFoundException | SQLException e) {
             e.printStackTrace();
         }
@@ -35,10 +39,11 @@ public class UserDAO {
     public static ArrayList<User> getAllUsers() {
         ArrayList<User> users = new ArrayList<User>();
 
-        String db = "web_final";
-
         try {
+            // This process used repeatedly to memorise the code snippet
 
+            // Connecting to mysql
+            String db = "web_final";
             Class.forName("com.mysql.jdbc.Driver");
             Connection conn = DriverManager.getConnection(
                     "jdbc:mysql://localhost:3306/" + db,
@@ -46,10 +51,12 @@ public class UserDAO {
                     ""
             );
 
+            // Preparing statement
             PreparedStatement pr = conn.prepareStatement(
                     "SELECT * FROM users"
             );
-
+            
+            // Executing query
             ResultSet rs = pr.executeQuery();
             while (rs.next()) {
                 users.add(new User(
@@ -60,6 +67,7 @@ public class UserDAO {
         } catch (Exception e) {
             e.printStackTrace();
         }
+
         return users;
     }
 }

@@ -13,18 +13,12 @@
             ArrayList<User> users = UserDAO.getAllUsers();
         %>
         <table border="1">
-            <%
-                for (int i = 0; i < users.size(); i++) {
-            %>
+            <%for (int i = 0; i < users.size(); i++) {%>
             <tr>
-                <%out.println("<td>" + users.get(i).getUsername()+ "</td>");%>
+                <%out.println("<td>" + users.get(i).getUsername() + "</td>");%>
                 <%out.println("<td>" + users.get(i).getAge() + "</td>");%>
             </tr>
-
-            <%
-                }
-            %>
-
+            <%}%>
         </table>
     </body>
 </html>

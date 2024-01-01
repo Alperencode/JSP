@@ -1,9 +1,5 @@
 package finalpractice;
 
-import java.sql.Connection;
-import java.sql.DriverManager;
-import java.sql.PreparedStatement;
-
 public class User {
     int id, age;
     String username;
