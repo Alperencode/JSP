@@ -35,10 +35,10 @@ Please refer to the specific directories and files for detailed information on e
 You can find various examples in this repository, including:
 
 - [**Lab Directory**](Lab): My Web Programming class' laboratory questions.
-- [**Sessions**](Final-Exam): Sessions usage in JSP
+- [**Sessions**](Sessions): Sessions usage in JSP
 - [**Basics**](Basics): Java programming language basics to practice and get used with it
 - [**JSP Basics**](JSPBasics): JSP practice files
-- [**Final Exam**](Lab): My practice projects before end-semester exam.
+- [**Final Exam**](Final-Exam): My practice projects before end-semester exam.
 
 Feel free to explore these examples and adapt them to your needs.
 
